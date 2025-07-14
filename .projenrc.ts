@@ -5,7 +5,7 @@ const project = new AwsCdkConstructLibrary({
   authorAddress: "steffan.norberhuis@rocketleap.dev",
   license: "MIT",
   copyrightOwner: "Norberhuis Onderneming B.V.",
-  cdkVersion: "2.37.1",
+  cdkVersion: "2.204.0",
   name: "@rocketleap/cdk-organizations",
   description: "Manage AWS organizations, organizational units (OU), accounts and service control policies (SCP).",
   keywords: [
@@ -67,7 +67,7 @@ const project = new AwsCdkConstructLibrary({
   gitpod: true,
 
   lambdaOptions: {
-    runtime: awscdk.LambdaRuntime.NODEJS_18_X,
+    runtime: awscdk.LambdaRuntime.NODEJS_22_X,
     bundlingOptions: {
       externals: [],
     },
