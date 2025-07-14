@@ -23,7 +23,7 @@ const project = new AwsCdkConstructLibrary({
     "trusted-access",
     "tag-resources",
   ],
-  repositoryUrl: "https://github.com/pepperize/cdk-organizations.git",
+  repositoryUrl: "https://github.com/rocketleap/cdk-organizations.git",
 
   projenrcTs: true,
 

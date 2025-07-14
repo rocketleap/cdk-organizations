@@ -3,7 +3,7 @@
   "description": "Manage AWS organizations, organizational units (OU), accounts and service control policies (SCP).",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pepperize/cdk-organizations.git"
+    "url": "https://github.com/rocketleap/cdk-organizations.git"
   },
   "scripts": {
     "build": "npx projen build",
