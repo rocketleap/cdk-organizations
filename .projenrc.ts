@@ -1,12 +1,12 @@
 import { AwsCdkConstructLibrary } from "@pepperize/projen-awscdk-construct";
 import { awscdk, javascript } from "projen";
 const project = new AwsCdkConstructLibrary({
-  author: "Patrick Florek",
-  authorAddress: "patrick.florek@gmail.com",
+  author: "Steffan Norberhuis",
+  authorAddress: "steffan.norberhuis@rocketleap.dev",
   license: "MIT",
-  copyrightOwner: "Pepperize UG (haftungsbeschränkt)",
+  copyrightOwner: "Norberhuis Onderneming B.V.",
   cdkVersion: "2.37.1",
-  name: "@pepperize/cdk-organizations",
+  name: "@rocketleap/cdk-organizations",
   description: "Manage AWS organizations, organizational units (OU), accounts and service control policies (SCP).",
   keywords: [
     "aws",
@@ -49,20 +49,20 @@ const project = new AwsCdkConstructLibrary({
   defaultReleaseBranch: "main",
   releaseToNpm: true,
   npmAccess: javascript.NpmAccess.PUBLIC,
-  publishToNuget: {
-    dotNetNamespace: "Pepperize.CDK",
-    packageId: "Pepperize.CDK.Organizations",
-  },
-  publishToPypi: {
-    distName: "pepperize.cdk-organizations",
-    module: "pepperize_cdk_organizations",
-  },
-  publishToMaven: {
-    mavenEndpoint: "https://s01.oss.sonatype.org",
-    mavenGroupId: "com.pepperize",
-    mavenArtifactId: "cdk-organizations",
-    javaPackage: "com.pepperize.cdk.organizations",
-  },
+  // publishToNuget: {
+  //   dotNetNamespace: "Pepperize.CDK",
+  //   packageId: "Pepperize.CDK.Organizations",
+  // },
+  // publishToPypi: {
+  //   distName: "pepperize.cdk-organizations",
+  //   module: "pepperize_cdk_organizations",
+  // },
+  // publishToMaven: {
+  //   mavenEndpoint: "https://s01.oss.sonatype.org",
+  //   mavenGroupId: "com.pepperize",
+  //   mavenArtifactId: "cdk-organizations",
+  //   javaPackage: "com.pepperize.cdk.organizations",
+  // },
 
   gitpod: true,
 
