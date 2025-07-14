@@ -1,5 +1,5 @@
 {
-  "name": "@pepperize/cdk-organizations",
+  "name": "@rocketleap/cdk-organizations",
   "description": "Manage AWS organizations, organizational units (OU), accounts and service control policies (SCP).",
   "repository": {
     "type": "git",
@@ -29,10 +29,7 @@
     "format": "npx projen format",
     "package": "npx projen package",
     "package-all": "npx projen package-all",
-    "package:dotnet": "npx projen package:dotnet",
-    "package:java": "npx projen package:java",
     "package:js": "npx projen package:js",
-    "package:python": "npx projen package:python",
     "post-compile": "npx projen post-compile",
     "pre-compile": "npx projen pre-compile",
     "release": "npx projen release",
@@ -43,8 +40,8 @@
     "projen": "npx projen"
   },
   "author": {
-    "name": "Patrick Florek",
-    "email": "patrick.florek@gmail.com",
+    "name": "Steffan Norberhuis",
+    "email": "steffan.norberhuis@rocketleap.dev",
     "organization": true
   },
   "devDependencies": {
@@ -55,7 +52,7 @@
     "@types/sinon": "^10.0.13",
     "@typescript-eslint/eslint-plugin": "^8",
     "@typescript-eslint/parser": "^8",
-    "aws-cdk-lib": "2.37.1",
+    "aws-cdk-lib": "2.204.0",
     "aws-lambda": "^1.0.7",
     "aws-sdk": "^2.1328.0",
     "aws-sdk-mock": "^5.8.0",
@@ -70,7 +67,7 @@
     "eslint-plugin-prettier": "^4.2.1",
     "jest": "^27",
     "jest-cdk-snapshot": "^2.2.5",
-    "jest-junit": "^15",
+    "jest-junit": "^16",
     "jsii": "~5.6.0",
     "jsii-diff": "^1.77.0",
     "jsii-docgen": "^10.5.0",
@@ -84,7 +81,7 @@
     "typescript": "^4.9.5"
   },
   "peerDependencies": {
-    "aws-cdk-lib": "^2.37.1",
+    "aws-cdk-lib": "^2.204.0",
     "constructs": "^10.0.5"
   },
   "dependencies": {
@@ -161,23 +158,7 @@
   "stability": "stable",
   "jsii": {
     "outdir": "dist",
-    "targets": {
-      "java": {
-        "package": "com.pepperize.cdk.organizations",
-        "maven": {
-          "groupId": "com.pepperize",
-          "artifactId": "cdk-organizations"
-        }
-      },
-      "python": {
-        "distName": "pepperize.cdk-organizations",
-        "module": "pepperize_cdk_organizations"
-      },
-      "dotnet": {
-        "namespace": "Pepperize.CDK",
-        "packageId": "Pepperize.CDK.Organizations"
-      }
-    },
+    "targets": {},
     "tsc": {
       "outDir": "lib",
       "rootDir": "src"
