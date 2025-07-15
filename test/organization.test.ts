@@ -48,10 +48,11 @@ describe("Organization", () => {
     organization.enablePolicyType(PolicyType.TAG_POLICY);
     organization.enablePolicyType(PolicyType.BACKUP_POLICY);
     organization.enablePolicyType(PolicyType.AISERVICES_OPT_OUT_POLICY);
+    organization.enablePolicyType(PolicyType.RESOURCE_CONTROL_POLICY);
 
     // Then
     const template = Template.fromStack(stack);
-    template.resourceCountIs("Custom::Organizations_EnablePolicyType", 4);
+    template.resourceCountIs("Custom::Organizations_EnablePolicyType", 5);
   });
 
   it("Should describe current organization", () => {

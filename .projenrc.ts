@@ -5,7 +5,10 @@ const project = new AwsCdkConstructLibrary({
   authorAddress: "steffan.norberhuis@rocketleap.dev",
   license: "MIT",
   copyrightOwner: "Norberhuis Onderneming B.V.",
+
   cdkVersion: "2.204.0",
+  constructsVersion: "10.4.2",
+
   name: "@rocketleap/cdk-organizations",
   description: "Manage AWS organizations, organizational units (OU), accounts and service control policies (SCP).",
   keywords: [
