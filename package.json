@@ -58,7 +58,7 @@
     "aws-sdk-mock": "^5.8.0",
     "cdk-nag": "^2.22.27",
     "commit-and-tag-version": "^12",
-    "constructs": "10.0.5",
+    "constructs": "10.4.2",
     "esbuild": "^0.17.11",
     "eslint": "^9",
     "eslint-config-prettier": "^8.7.0",
@@ -82,7 +82,7 @@
   },
   "peerDependencies": {
     "aws-cdk-lib": "^2.204.0",
-    "constructs": "^10.0.5"
+    "constructs": "^10.4.2"
   },
   "dependencies": {
     "pascal-case": "^3.1.2"

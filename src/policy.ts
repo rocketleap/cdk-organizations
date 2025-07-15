@@ -35,6 +35,10 @@ export enum PolicyType {
    * Artificial Intelligence (AI) services opt-out policies enable you to control data collection for AWS AI services for all of your organization's accounts.
    */
   AISERVICES_OPT_OUT_POLICY = "AISERVICES_OPT_OUT_POLICY",
+  /**
+   * Resource control policies offer central control over the resource policies applied to all resources in your organization.
+   */
+  RESOURCE_CONTROL_POLICY = "RESOURCE_CONTROL_POLICY",
 }
 
 export interface PolicyProps {

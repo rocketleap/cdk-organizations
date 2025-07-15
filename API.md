@@ -129,7 +129,7 @@ The unique identifier (ID) of the parent root, organizational unit (OU), account
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="@rocketleap/cdk-organizations.Account.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@rocketleap/cdk-organizations.Account.isConstruct"></a>
 
 ```typescript
 import { Account } from '@rocketleap/cdk-organizations'
@@ -138,6 +138,20 @@ Account.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="@rocketleap/cdk-organizations.Account.isConstruct.parameter.x"></a>
 
@@ -305,7 +319,7 @@ Returns a string representation of this construct.
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="@rocketleap/cdk-organizations.DelegatedAdministrator.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@rocketleap/cdk-organizations.DelegatedAdministrator.isConstruct"></a>
 
 ```typescript
 import { DelegatedAdministrator } from '@rocketleap/cdk-organizations'
@@ -314,6 +328,20 @@ DelegatedAdministrator.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="@rocketleap/cdk-organizations.DelegatedAdministrator.isConstruct.parameter.x"></a>
 
@@ -412,7 +440,7 @@ Returns a string representation of this construct.
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="@rocketleap/cdk-organizations.EnableAwsServiceAccess.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@rocketleap/cdk-organizations.EnableAwsServiceAccess.isConstruct"></a>
 
 ```typescript
 import { EnableAwsServiceAccess } from '@rocketleap/cdk-organizations'
@@ -421,6 +449,20 @@ EnableAwsServiceAccess.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="@rocketleap/cdk-organizations.EnableAwsServiceAccess.isConstruct.parameter.x"></a>
 
@@ -517,7 +559,7 @@ Returns a string representation of this construct.
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="@rocketleap/cdk-organizations.EnablePolicyType.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@rocketleap/cdk-organizations.EnablePolicyType.isConstruct"></a>
 
 ```typescript
 import { EnablePolicyType } from '@rocketleap/cdk-organizations'
@@ -526,6 +568,20 @@ EnablePolicyType.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="@rocketleap/cdk-organizations.EnablePolicyType.isConstruct.parameter.x"></a>
 
@@ -676,7 +732,7 @@ Enables policy types in the following two broad categories: Authorization polici
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="@rocketleap/cdk-organizations.Organization.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@rocketleap/cdk-organizations.Organization.isConstruct"></a>
 
 ```typescript
 import { Organization } from '@rocketleap/cdk-organizations'
@@ -685,6 +741,20 @@ Organization.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="@rocketleap/cdk-organizations.Organization.isConstruct.parameter.x"></a>
 
@@ -937,7 +1007,7 @@ The unique identifier (ID) of the parent root, organizational unit (OU), account
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="@rocketleap/cdk-organizations.OrganizationalUnit.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@rocketleap/cdk-organizations.OrganizationalUnit.isConstruct"></a>
 
 ```typescript
 import { OrganizationalUnit } from '@rocketleap/cdk-organizations'
@@ -946,6 +1016,20 @@ OrganizationalUnit.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="@rocketleap/cdk-organizations.OrganizationalUnit.isConstruct.parameter.x"></a>
 
@@ -1102,7 +1186,7 @@ The unique identifier (ID) of the parent root, organizational unit (OU), account
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="@rocketleap/cdk-organizations.Parent.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@rocketleap/cdk-organizations.Parent.isConstruct"></a>
 
 ```typescript
 import { Parent } from '@rocketleap/cdk-organizations'
@@ -1111,6 +1195,20 @@ Parent.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="@rocketleap/cdk-organizations.Parent.isConstruct.parameter.x"></a>
 
@@ -1249,7 +1347,7 @@ The unique identifier (ID) of the parent root, organizational unit (OU), account
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="@rocketleap/cdk-organizations.ParentBase.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@rocketleap/cdk-organizations.ParentBase.isConstruct"></a>
 
 ```typescript
 import { ParentBase } from '@rocketleap/cdk-organizations'
@@ -1258,6 +1356,20 @@ ParentBase.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="@rocketleap/cdk-organizations.ParentBase.isConstruct.parameter.x"></a>
 
@@ -1368,7 +1480,7 @@ public identifier(): string
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="@rocketleap/cdk-organizations.Policy.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@rocketleap/cdk-organizations.Policy.isConstruct"></a>
 
 ```typescript
 import { Policy } from '@rocketleap/cdk-organizations'
@@ -1377,6 +1489,20 @@ Policy.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="@rocketleap/cdk-organizations.Policy.isConstruct.parameter.x"></a>
 
@@ -1499,7 +1625,7 @@ Returns a string representation of this construct.
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="@rocketleap/cdk-organizations.PolicyAttachment.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@rocketleap/cdk-organizations.PolicyAttachment.isConstruct"></a>
 
 ```typescript
 import { PolicyAttachment } from '@rocketleap/cdk-organizations'
@@ -1508,6 +1634,20 @@ PolicyAttachment.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="@rocketleap/cdk-organizations.PolicyAttachment.isConstruct.parameter.x"></a>
 
@@ -1647,7 +1787,7 @@ The unique identifier (ID) of the parent root, organizational unit (OU), account
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="@rocketleap/cdk-organizations.Root.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@rocketleap/cdk-organizations.Root.isConstruct"></a>
 
 ```typescript
 import { Root } from '@rocketleap/cdk-organizations'
@@ -1656,6 +1796,20 @@ Root.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="@rocketleap/cdk-organizations.Root.isConstruct.parameter.x"></a>
 
@@ -1778,7 +1932,7 @@ Returns a string representation of this construct.
 
 ---
 
-##### ~~`isConstruct`~~ <a name="isConstruct" id="@rocketleap/cdk-organizations.TagResource.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@rocketleap/cdk-organizations.TagResource.isConstruct"></a>
 
 ```typescript
 import { TagResource } from '@rocketleap/cdk-organizations'
@@ -1787,6 +1941,20 @@ TagResource.isConstruct(x: any)
 ```
 
 Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
 
 ###### `x`<sup>Required</sup> <a name="x" id="@rocketleap/cdk-organizations.TagResource.isConstruct.parameter.x"></a>
 
@@ -3130,6 +3298,7 @@ Organizations offers policy types in the following two broad categories: <ol>   
 | <code><a href="#@rocketleap/cdk-organizations.PolicyType.TAG_POLICY">TAG_POLICY</a></code> | Tag policies help you standardize the tags attached to the AWS resources in your organization's accounts. |
 | <code><a href="#@rocketleap/cdk-organizations.PolicyType.BACKUP_POLICY">BACKUP_POLICY</a></code> | Backup policies help you centrally manage and apply backup plans to the AWS resources across your organization's accounts. |
 | <code><a href="#@rocketleap/cdk-organizations.PolicyType.AISERVICES_OPT_OUT_POLICY">AISERVICES_OPT_OUT_POLICY</a></code> | Artificial Intelligence (AI) services opt-out policies enable you to control data collection for AWS AI services for all of your organization's accounts. |
+| <code><a href="#@rocketleap/cdk-organizations.PolicyType.RESOURCE_CONTROL_POLICY">RESOURCE_CONTROL_POLICY</a></code> | Resource control policies offer central control over the resource policies applied to all resources in your organization. |
 
 ---
 
@@ -3157,6 +3326,13 @@ Backup policies help you centrally manage and apply backup plans to the AWS reso
 ##### `AISERVICES_OPT_OUT_POLICY` <a name="AISERVICES_OPT_OUT_POLICY" id="@rocketleap/cdk-organizations.PolicyType.AISERVICES_OPT_OUT_POLICY"></a>
 
 Artificial Intelligence (AI) services opt-out policies enable you to control data collection for AWS AI services for all of your organization's accounts.
+
+---
+
+
+##### `RESOURCE_CONTROL_POLICY` <a name="RESOURCE_CONTROL_POLICY" id="@rocketleap/cdk-organizations.PolicyType.RESOURCE_CONTROL_POLICY"></a>
+
+Resource control policies offer central control over the resource policies applied to all resources in your organization.
 
 ---
 
