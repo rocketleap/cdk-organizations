@@ -1,12 +1,13 @@
 import { AwsCdkConstructLibrary } from "@pepperize/projen-awscdk-construct";
-import { awscdk, javascript } from "projen";
+import { awscdk, javascript, JsonPatch } from "projen";
+
 const project = new AwsCdkConstructLibrary({
   author: "Steffan Norberhuis",
   authorAddress: "steffan.norberhuis@rocketleap.dev",
   license: "MIT",
   copyrightOwner: "Norberhuis Onderneming B.V.",
 
-  cdkVersion: "2.204.0",
+  cdkVersion: "2.198.0",
   constructsVersion: "10.4.2",
 
   name: "@rocketleap/cdk-organizations",
@@ -82,6 +83,57 @@ project.gitpod?.addCustomTask({
   init: "yarn install && npx projen build",
   command: "npx projen watch",
 });
+
+project.release?.publisher.publishToNpm({
+  registry: "registry.npmjs.org",
+  distTag: "latest",
+  npmProvenance: true,
+  prePublishSteps: [
+    {
+      name: "Checkout",
+      uses: "actions/checkout@v4",
+      with: {
+        path: ".repo",
+      },
+    },
+    {
+      name: "Install Dependencies",
+      run: "cd .repo && yarn install --check-files --frozen-lockfile",
+    },
+    {
+      name: "Extract build artifact",
+      run: "tar --strip-components=1 -xzvf dist/js/*.tgz -C .repo",
+    },
+    {
+      name: "Move build artifact out of the way",
+      run: "mv dist dist.old",
+    },
+    {
+      name: "Create js artifact",
+      run: "cd .repo && npx projen package:js",
+    },
+    { name: "Collect js artifact", run: "mv .repo/dist dist" },
+  ],
+  postPublishSteps: [
+    {
+      name: "Release to GitHub",
+      run: "npx -p publib@latest publib-npm",
+      env: {
+        NPM_DIST_TAG: "latest",
+        NPM_REGISTRY: "npm.pkg.github.com",
+        NPM_TOKEN: "${{ secrets.GITHUB_TOKEN }}",
+      },
+    },
+  ],
+});
+
+project.tryFindObjectFile(".github/workflows/release.yml")?.patch(
+  JsonPatch.add("/jobs/release_npm/permissions", {
+    "id-token": "write",
+    contents: "read",
+    packages: "write",
+  })
+);
 
 project.gitpod?.addVscodeExtensions("dbaeumer.vscode-eslint");
 
