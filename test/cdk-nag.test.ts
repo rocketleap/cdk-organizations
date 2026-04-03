@@ -20,6 +20,10 @@ describe("cdk-nag", () => {
         },
         { id: "AwsSolutions-L1", reason: "Custom resource providers bundled with the sdk" },
         {
+          id: "AwsSolutions-SF1",
+          reason: "CloudWatch logging not configurable for Provider framework's internal waiter-state-machine",
+        },
+        {
           id: "AwsSolutions-SF2",
           reason: "X-Ray tracing not configurable for Provider framework's internal waiter-state-machine",
         },
